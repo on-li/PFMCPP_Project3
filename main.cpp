@@ -36,51 +36,51 @@ Sub Object 1: Steering Wheel
     Name 4 things you'll find on the:    Steering Wheel
         1) paddle shifters
         2) 'cruise control' controls
-        3) 
-        4) 
+        3) volume controls 
+        4) car horn control
     Name 2 things you can do with the:   Steering Wheel
         1) adjust cruise control settings.
-        2)
+        2) honk the car horn 
         
 Sub Object 2: Instrument Cluster
     Name 4 things you'll find on the:   Instrument Cluster
-        1)
-        2)
-        3)
-        4)
+        1) speedometer
+        2) fuel gauge
+        3) turn signal indicator 
+        4) gear selection
     Name 3 things you can do with the:   Instrument Cluster
-        1)
-        2)
-        3)
+        1) check the current speed
+        2) check the fuel level
+        3) check the current turn signal direction
     
 Sub Object 3: Environment Controls
     Name 3 things you'll find on the:    Environment Controls
-        1)
-        2)
-        3)
+        1) hazard light button
+        2) temperature controls
+        3) fan controls  
     Name 3 things you can do with the:   Environment Controls
-        1)
-        2)
-        3)
+        1) change the car temperature
+        2) change the fan speed
+        3) turn on the hazard lights
 
 Sub Object 4: Infotainment System
     Name 3 things you'll find on the:    Infotainment System
-        1)
-        2)
-        3)
+        1) volume control
+        2) phone pickup button
+        3) source control
     Name 3 things you can do with the:   Infotainment System
-        1)
-        2)
-        3)
+        1) pickup phone calls
+        2) change the volume
+        3) change audio source
 
 Sub Object 5: Seat 
     Name 3 things you'll find on the:    Seat
-        1)
-        2)
-        3)
+        1) headrest
+        2) position controls
+        3) seatbelt
     Name 2 things you can do with the:   Seat
-        1)
-        2)
+        1) adjust back seat angle
+        2) adjust headrest height
 */
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
