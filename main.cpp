@@ -57,59 +57,59 @@ Thing: Car Wash
  */
 
 /*
-Thing 1)
+Thing 1) Gym
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of squat racks
+    2) number of free weights 
+    3) number of exercise machines
+    4) number of people inside currently
+    5) price of membership
 3 things it can do:
-    1)
-    2)
-    3)
+    1) charge customers for monthly memberships
+    2) sanitize the gym equipment
+    3) put free weights back into place 
  */
 
 /*
-Thing 2)
+Thing 2) Mechanical Keyboard
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) keyboard layout
+    2) keycap material 
+    3) plate material
+    4) typing angle
+    5) location of rgb lighting 
 3 things it can do:
-    1)
-    2)
-    3)
+    1) display RGB underglow lighting
+    2) connect to device 
+    3) produce typing sounds 
  */
 
 /*
-Thing 3)
+Thing 3) Piano
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of keys   
+    2) brand 
+    3) type of piano 
+    4) number of pedals
+    5) weight
 3 things it can do:
-    1)
-    2)
-    3)
+    1) play notes
+    2) sustain notes
+    3) change note volume
  */
 
 /*
-Thing 4)
+Thing 4) Desktop Computer
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) CPU
+    2) GPU
+    3) amount of RAM
+    4) hard drive space
+    5) total price
 3 things it can do:
-    1)
-    2)
-    3)
+    1) turn on
+    2) open programs
+    3) connect to peripheral devices
  */
 
 
