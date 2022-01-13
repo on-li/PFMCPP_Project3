@@ -1,5 +1,5 @@
 /*
-Project 3 - Part 1b / 5
+Project 3 - Part 1c / 5
 Video:  Chapter 2 Part 5
 User-Defined Types
 
@@ -21,12 +21,65 @@ Part1 will be broken up into 5 separate steps
     Part 1e: you will convert those 10 plain-english UDTs into code that runs.
 ************************
 
-1)  Fill in #1 - 4 with a random UDT in plain english
-    These 4 UDTs do not need to be related.
-        a) For each plain-english UDT, write out 5 traits or properties and 3 things it can do
-        b) remember: these properties will eventually become primitives.
-        pick properties that can be represented with 'int float double bool char std::string'
+1) write the 10th UDT
+    come up with an object that is made of 5 smaller parts.
+    These parts will not be defined using Primitives, but instead will be their own UDTs you'll define in Part 1d
+    
+    Here is an example:
+    Cell Phone
+
+    A Cell Phone is made up of the following 5 properties:
+        Display
+        Memory
+        CPU
+        Radio
+        Applications
+
+    A Cell Phone has 3 things it can do:
+        make a call
+        send a text
+        run an application.
+
+    Notice that I did not use "has a display" or "Has memory" or "has a cpu" as one of the properties of the CellPhone
+    
+    Writing 'has a ___" checks whether or not your object **has the ability to do something**.
+    Instead, I wrote "Display" or "CPU".  These are specific objects or amounts. 
+    
+    In C++ terms, this means to I want you to avoid using 'bool' (has a) as a member variable type.
+    Instead, prefer the other primitive types.
+
+    When you choose your 5 smaller parts, remember that each of these 5 Sub Objects will need 
+    to be defined with 5 primitive properties and 3 actions EACH.  
+
+2) write the name of the primitive type you'll be using after each property in UDTs 1-4:
+    pick properties that can be represented with 'int float double bool char std::string'
+    example: 
+        Display:
+            Number of Pixels (int)
+            Amount of Power consumed (milliwatt-hours) (float)
+            Brightness (double)
+            area in cm2 (int)
+            brand (std::string)
+
+3) Move the Thing 10 pseudo-code to after your Thing1-4 in the project.
 */
+
+/*
+Thing 10)
+5 properties:
+    1)
+    2)
+    3)
+    4)
+    5)
+3 things it can do:
+    1)
+    2)
+    3)
+ */
+
+
+
 
 /*
  example:  
