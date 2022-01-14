@@ -151,11 +151,11 @@ Thing 4) Desktop Computer
  /*
 Thing 10) Media Player
 5 properties: 
-    1) Video
-    2) Audio
-    3) Playback
-    4) Menu
-    5) File
+    1) Video Controls
+    2) Audio Controls
+    3) Playback Controls
+    4) Display Options
+    5) File Browser
 3 things it can do:
     1) play a video
     2) play music
