@@ -65,23 +65,6 @@ Part1 will be broken up into 5 separate steps
 */
 
 /*
-Thing 10)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
- */
-
-
-
-
-/*
  example:  
  
 Thing: Car Wash   
@@ -112,11 +95,11 @@ Thing: Car Wash
 /*
 Thing 1) Gym
 5 properties:
-    1) number of squat racks
-    2) number of free weights 
-    3) number of exercise machines
-    4) number of people inside currently
-    5) price of membership
+    1) number of squat racks (int)
+    2) number of free weights (int)
+    3) number of exercise machines (int)
+    4) number of people inside currently (int)
+    5) price of membership (double)
 3 things it can do:
     1) charge customers for monthly memberships
     2) sanitize the gym equipment
@@ -126,11 +109,11 @@ Thing 1) Gym
 /*
 Thing 2) Mechanical Keyboard
 5 properties:
-    1) keyboard layout
-    2) keycap material 
-    3) plate material
-    4) typing angle
-    5) location of rgb lighting 
+    1) keyboard layout (int)
+    2) keycap material (std::string)
+    3) plate material (std::string)
+    4) typing angle (double)
+    5) location of rgb lighting (std::string)
 3 things it can do:
     1) display RGB underglow lighting
     2) connect to device 
@@ -140,11 +123,11 @@ Thing 2) Mechanical Keyboard
 /*
 Thing 3) Piano
 5 properties:
-    1) number of keys   
-    2) brand 
-    3) type of piano 
-    4) number of pedals
-    5) weight
+    1) number of keys (int)
+    2) brand (std::string)
+    3) type of piano (std::string)
+    4) number of pedals (int)
+    5) weight (int)
 3 things it can do:
     1) play notes
     2) sustain notes
@@ -154,16 +137,103 @@ Thing 3) Piano
 /*
 Thing 4) Desktop Computer
 5 properties:
-    1) CPU
-    2) GPU
-    3) amount of RAM
-    4) hard drive space
-    5) total price
+    1) number of cores (int)
+    2) GPU (std::string)
+    3) amount of RAM (int)
+    4) hard drive space (int)
+    5) total price (double)
 3 things it can do:
     1) turn on
     2) open programs
     3) connect to peripheral devices
  */
+
+ /*
+Thing 5) Video Controls
+5 properties: 
+    1) fullscreen (bool)
+    2) video encoder (std::string)
+    3) window size (float)
+    4) brightness (float)
+    5) contrast (float)
+3 things it can do:
+    1) change window size
+    2) change brightness
+    3) enter/exit fullscreen
+ */
+
+/*
+Thing 6) Audio Controls
+5 properties:
+    1) volume (int)
+    2) equalizer preset (int)
+    3) pitch (float)
+    4) audio encoder (std::string)
+    5) output device (std::string)
+3 things it can do:
+    1) change volume
+    2) mute audio
+    3) change output device
+ */
+
+/*
+Thing 7) Playback Controls
+5 properties:
+    1) current timestamp (int)
+    2) length of media (int)
+    3) speed (float)
+    4) title (std::string)
+    5) chapter (int)
+3 things it can do:
+    1) skip to next chapter
+    2) display current timestamp
+    3) change speed 
+ */
+
+/*
+Thing 8) Display Options
+5 properties:
+    1) language (std::string)
+    2) font size (float)
+    3) dark mode (bool)
+    4) button size (float)
+    5) advanced display (bool)
+3 things it can do: 
+    1) change to dark mode
+    2) change font size
+    3) change language
+ */
+
+/*
+Thing 9) File Browser
+5 properties:
+    1) file type(std::string)
+    2) file location(std::string)
+    3) file size(unsigned int)
+    4) date created(std::string)
+    5) date opened (std::string)
+3 things it can do:
+    1) open file
+    2) add file to playlist
+    3) open url path
+ */
+
+ /*
+Thing 10) Media Player
+5 properties: 
+    1) Video
+    2) Audio
+    3) Playback
+    4) Menu
+    5) File
+3 things it can do:
+    1) play a video
+    2) play music
+    3) create a media playlist
+ */
+
+
+
 
 
 
