@@ -80,77 +80,6 @@ Part1 will be broken up into 5 separate steps
 3) move Thing 5-9 to between your Thing 4 and Thing 10.
 */
 
-/*
-Thing 5)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
- */
-
-/*
-Thing 6)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
- */
-
-/*
-Thing 7)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
- */
-
-/*
-Thing 8)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
- */
-
-/*
-Thing 9)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
- */
-
-
 
 /*
 Thing 1) Gym
@@ -206,6 +135,76 @@ Thing 4) Desktop Computer
     1) turn on
     2) open programs
     3) connect to peripheral devices
+ */
+
+ /*
+Thing 5) Video Controls
+5 properties: 
+    1) fullscreen (bool)
+    2) video encoder (std::string)
+    3) window size (float)
+    4) brightness (float)
+    5) contrast (float)
+3 things it can do:
+    1) change window size
+    2) change brightness
+    3) enter/exit fullscreen
+ */
+
+/*
+Thing 6) Audio Controls
+5 properties:
+    1) volume (int)
+    2) equalizer preset (int)
+    3) pitch (float)
+    4) audio encoder (std::string)
+    5) output device (std::string)
+3 things it can do:
+    1) change volume
+    2) mute audio
+    3) change output device
+ */
+
+/*
+Thing 7) Playback Controls
+5 properties:
+    1) current timestamp (int)
+    2) length of media (int)
+    3) speed (float)
+    4) title (std::string)
+    5) chapter (int)
+3 things it can do:
+    1) skip to next chapter
+    2) display current timestamp
+    3) change speed 
+ */
+
+/*
+Thing 8) Display Options
+5 properties:
+    1) language (std::string)
+    2) font size (float)
+    3) dark mode (bool)
+    4) button size (float)
+    5) advanced display (bool)
+3 things it can do: 
+    1) change to dark mode
+    2) change font size
+    3) change language
+ */
+
+/*
+Thing 9) File Browser
+5 properties:
+    1) file type(std::string)
+    2) file location(std::string)
+    3) file size(unsigned int)
+    4) date created(std::string)
+    5) date opened (std::string)
+3 things it can do:
+    1) open file
+    2) add file to playlist
+    3) open url path
  */
 
  /*
