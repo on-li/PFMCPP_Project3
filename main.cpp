@@ -202,6 +202,26 @@ Thing 1) Gym
     3) put free weights back into place 
  */
 
+struct Gym 
+{
+    //number of squat racks
+
+    //number of free weights
+
+    //number of exercise machines
+
+    //number of people inside currently
+
+    //price of membership
+
+    //charge customers for motnhly memberships
+
+    //sanitize the gym equipment
+
+    //put free weights back into place
+
+};
+
 /*
 Thing 2) Mechanical Keyboard
 5 properties:
@@ -215,6 +235,27 @@ Thing 2) Mechanical Keyboard
     2) connect to device 
     3) produce typing sounds 
  */
+
+ struct MechanicalKeyboard
+ {
+
+     //keyboard layout
+
+     //keycap material
+
+     //plate material
+
+     //typing angle
+
+     //location of rgb lighting
+
+     //display RGB underglow lighting
+
+     //connect to device
+
+     //produce typing sounds
+
+ };
 
 /*
 Thing 3) Piano
@@ -230,6 +271,26 @@ Thing 3) Piano
     3) change note volume
  */
 
+ struct Piano
+ {
+     //number of keys
+
+     //brand
+
+     //type of piano
+
+     //number of pedals
+
+     //weight
+
+     //play notes
+
+     //sustain notes
+
+     //change note volume
+
+ };
+
 /*
 Thing 4) Desktop Computer
 5 properties:
@@ -243,6 +304,27 @@ Thing 4) Desktop Computer
     2) open programs
     3) connect to peripheral devices
  */
+
+ struct DesktopComputer
+ {
+
+     //number of cores
+
+     //GPU
+
+     //amount of RAM
+
+     //hard drive space
+
+     //total price
+
+     //turn on
+
+     //open programs
+
+     //connect to peripheral devices
+
+ };
 
  /*
 Thing 5) Video Controls
@@ -258,6 +340,26 @@ Thing 5) Video Controls
     3) enter/exit fullscreen
  */
 
+ struct VideoControls
+ {
+     //fullscreen
+
+     //video encoder
+
+     //window size
+
+     //brightness
+
+     //contrast
+
+     //change window size
+
+     //change brightness
+
+     //enter/exit fullscreen
+
+ };
+
 /*
 Thing 6) Audio Controls
 5 properties:
@@ -271,6 +373,25 @@ Thing 6) Audio Controls
     2) mute audio
     3) change output device
  */
+
+ struct AudioControls 
+ {
+     //volume
+
+     //equalizer preset
+
+     //pitch
+
+     //audio encoder
+
+     //output device
+
+     //change volume
+
+     //mute audio 
+
+     //change output device
+ };
 
 /*
 Thing 7) Playback Controls
@@ -286,6 +407,25 @@ Thing 7) Playback Controls
     3) change speed 
  */
 
+struct PlaybackControls
+{
+    //current timestamp
+
+    //length of media
+
+    //speed
+
+    //title
+
+    //chapter
+
+    //skip to next chapter
+
+    //display current timestamp
+
+    //change speed
+};
+
 /*
 Thing 8) Display Options
 5 properties:
@@ -299,6 +439,27 @@ Thing 8) Display Options
     2) change font size
     3) change language
  */
+
+struct DisplayOptions
+{
+
+    //language
+
+    //font size
+
+    //dark mode
+
+    //button size
+
+    //advanced display
+
+    //change to dark mode
+
+    //change font size
+
+    //change language
+
+};
 
 /*
 Thing 9) File Browser
@@ -314,6 +475,25 @@ Thing 9) File Browser
     3) open url path
  */
 
+struct FileBrowser
+{
+    //file type
+
+    //file location
+
+    //file size
+
+    //date created
+
+    //date opened
+
+    //open file
+
+    //add file to playlist
+
+    //open url path
+};
+
  /*
 Thing 10) Media Player
 5 properties: 
@@ -328,6 +508,24 @@ Thing 10) Media Player
     3) create a media playlist
  */
 
+struct MediaPlayer
+{
+    //Video Controls
+
+    //Audio Controls
+
+    //Playback Controls
+
+    //Display Options
+
+    //File Browser
+
+    //play a video
+
+    //play music
+
+    //create a media playlist
+};
 
 
 
