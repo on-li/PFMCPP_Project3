@@ -205,21 +205,22 @@ Thing 1) Gym
 struct Gym 
 {
     //number of squat racks
-
+    int numSquatRacks = 3;
     //number of free weights
-
+    int numFreeWeights = 30;
     //number of exercise machines
-
+    int numExerciseMachines = 20;
     //number of people inside currently
-
+    int numPeopleInside = 25;
     //price of membership
-
-    //charge customers for motnhly memberships
-
+    double priceOfMembership = 20.00;
+    
+    //charge customers for monthly memberships
+    double chargeMonthlyFee (double priceOfMembership, int numMonths = 12); 
     //sanitize the gym equipment
-
+    void sanitizeExerciseMachines (int numExerciseMachines);
     //put free weights back into place
-
+    void returnFreeWeights (int numFreeWeights);
 };
 
 /*
@@ -228,7 +229,7 @@ Thing 2) Mechanical Keyboard
     1) keyboard layout (int)
     2) keycap material (std::string)
     3) plate material (std::string)
-    4) typing angle (double)
+    4) typing angle (float)
     5) location of rgb lighting (std::string)
 3 things it can do:
     1) display RGB underglow lighting
@@ -236,25 +237,26 @@ Thing 2) Mechanical Keyboard
     3) produce typing sounds 
  */
 
- struct MechanicalKeyboard
- {
+struct MechanicalKeyboard
+{
 
-     //keyboard layout
-
-     //keycap material
-
-     //plate material
-
-     //typing angle
-
-     //location of rgb lighting
-
-     //display RGB underglow lighting
-
-     //connect to device
-
-     //produce typing sounds
-
+    //keyboard layout
+    int keyboardLayout = 65;
+    //keycap material
+    std::string keycapMaterial = "ABS";
+    //plate material
+    std::string plateMaterial = "FR4";
+    //typing angle
+    float typingAngle = 6.5f;
+    //location of rgb lighting
+    std::string rgbLocation = "bottom";
+    
+    //display RGB underglow lighting
+    void displayRGB (std::string rgbLocation, int brightnessLevel = 50);
+    //connect to device
+    bool connectToDevice (std::string deviceName);
+    //produce typing sounds
+    void produceTypingSounds (float volume, float pitch);
  };
 
 /*
@@ -264,32 +266,33 @@ Thing 3) Piano
     2) brand (std::string)
     3) type of piano (std::string)
     4) number of pedals (int)
-    5) weight (int)
+    5) weight (float)
 3 things it can do:
     1) play notes
     2) sustain notes
     3) change note volume
  */
 
- struct Piano
- {
-     //number of keys
-
-     //brand
-
-     //type of piano
-
-     //number of pedals
-
-     //weight
-
-     //play notes
-
-     //sustain notes
-
-     //change note volume
-
- };
+struct Piano
+{
+    //number of keys
+    int numKeys = 88;
+    //brand
+    std::string brand = "Casio";
+    //type of piano
+    std::string pianoType = "Digital";
+    //number of pedals
+    int numPedals = 1;
+    //weight
+    float weight = 20.5f;
+    
+    //play notes
+    void playNotes(int keyToPlay, float timeToHoldKey, int keyVolume);
+    //sustain notes
+    void sustainNotes(bool hasPedal, int lengthOfTime, int keyToSustain);
+    //change note volume
+    int changeNoteVolume(int newVolume);
+};
 
 /*
 Thing 4) Desktop Computer
@@ -303,35 +306,36 @@ Thing 4) Desktop Computer
     1) turn on
     2) open programs
     3) connect to peripheral devices
- */
+*/
 
- struct DesktopComputer
- {
+struct DesktopComputer
+{
 
-     //number of cores
+    //number of cores
+    int numCores = 4;
+    //GPU
+    std::string GPU = "R9 390";
+    //amount of RAM
+    int ramAmount = 16; 
+    //hard drive space
+    int hardDriveSpace = 1000;
+    //total price
+    double totalPrice = 749.99;
+    
+    //turn on
+    bool turnOnComputer();
+    //open programs
+    bool openProgram(std::string programName);
+    //connect to peripheral devices
+    bool connectToPeripheralDevice(std::string deviceName, int USBPort);
+};
 
-     //GPU
-
-     //amount of RAM
-
-     //hard drive space
-
-     //total price
-
-     //turn on
-
-     //open programs
-
-     //connect to peripheral devices
-
- };
-
- /*
+/*
 Thing 5) Video Controls
 5 properties: 
     1) fullscreen (bool)
     2) video encoder (std::string)
-    3) window size (float)
+    3) window size in pixels(unsigned int)
     4) brightness (float)
     5) contrast (float)
 3 things it can do:
@@ -340,25 +344,26 @@ Thing 5) Video Controls
     3) enter/exit fullscreen
  */
 
- struct VideoControls
- {
-     //fullscreen
+struct VideoControls
+{
+    //fullscreen
+    bool isFullscreen = false;
+    //video encoder
+    std::string videoEncoder = "H264";
+    //window size in pixels
+    float windowSizeInPixels = 1769472000; 
+    //brightness
+    float brightness = 50.0f;
+    //contrast
+    float contrast = 50.0f;
 
-     //video encoder
-
-     //window size
-
-     //brightness
-
-     //contrast
-
-     //change window size
-
-     //change brightness
-
-     //enter/exit fullscreen
-
- };
+    //change window size
+    float changeWindowSize(float newWindowSize);
+    //change brightness
+    float changeBrightness(float newBrightness);
+    //enter/exit fullscreen
+    void toggleFullScreen(bool isFullscreen);
+};
 
 /*
 Thing 6) Audio Controls
@@ -374,24 +379,26 @@ Thing 6) Audio Controls
     3) change output device
  */
 
- struct AudioControls 
- {
-     //volume
-
-     //equalizer preset
-
-     //pitch
-
-     //audio encoder
-
-     //output device
-
-     //change volume
-
-     //mute audio 
-
-     //change output device
- };
+struct AudioControls 
+{
+    //volume
+    int volume = 50;
+    //equalizer preset
+    int equalizerPreset = 1;
+    //pitch
+    float pitch = 7.0f;
+    //audio encoder
+    std::string audioEncoder = "AAC";
+    //output device
+    std::string outputDevice = "Speakers";
+    
+    //change volume
+    int changeVolume(int newVolume);
+    //mute audio 
+    void muteAudio();
+    //change output device
+    void changeOutputDevice(std::string newOutputDeviceName, int volume = 50);
+};
 
 /*
 Thing 7) Playback Controls
@@ -410,20 +417,22 @@ Thing 7) Playback Controls
 struct PlaybackControls
 {
     //current timestamp
-
+    int currentTimestamp = 0;
     //length of media
-
+    int lengthOfMedia = 1440;
     //speed
-
+    float speed = 1.00f;
     //title
-
+    std::string title = "Movie 1";
     //chapter
-
+    int chapter = 1;
+    
     //skip to next chapter
-
+    int skipToNextChapter(int currentChapter);
     //display current timestamp
-
+    int displayCurrentTimeStamp(int currentTimeStamp);
     //change speed
+    float changeSpeed(float newSpeed);
 };
 
 /*
@@ -432,7 +441,7 @@ Thing 8) Display Options
     1) language (std::string)
     2) font size (float)
     3) dark mode (bool)
-    4) button size (float)
+    4) button size (int)
     5) advanced display (bool)
 3 things it can do: 
     1) change to dark mode
@@ -442,23 +451,23 @@ Thing 8) Display Options
 
 struct DisplayOptions
 {
-
     //language
-
+    std::string language = "English";
     //font size
-
+    float fontSize = 14.0f;
     //dark mode
-
+    bool darkMode = true;
     //button size
-
+    int buttonSize = 3;
     //advanced display
-
+    bool advancedDisplay = false;
+    
     //change to dark mode
-
+    void toggleDarkMode(bool isDarkMode);
     //change font size
-
+    float changeFontSize(float newFontSize);
     //change language
-
+    void changeLanguage(std::string newLanguage, int fontSize = 14.0f);
 };
 
 /*
@@ -478,20 +487,22 @@ Thing 9) File Browser
 struct FileBrowser
 {
     //file type
-
+    std::string fileType = "mp4";
     //file location
-
+    std::string fileLocation = "Desktop";
     //file size
-
+    int fileSize = 200;
     //date created
-
+    std::string dateCreated = "1/17/2022";
     //date opened
-
+    std::string dateOpened = "1/17/2022";
+    
     //open file
-
+    std::string openFile(std::string fileLocation);
     //add file to playlist
-
+    std::string addFileToPlaylist(std::string fileName, std::string playListName);
     //open url path
+    std::string openURL(std::string url);
 };
 
  /*
@@ -511,20 +522,22 @@ Thing 10) Media Player
 struct MediaPlayer
 {
     //Video Controls
-
+    VideoControls videoControls;
     //Audio Controls
-
+    AudioControls audioControls;
     //Playback Controls
-
+    PlaybackControls playbackControls;
     //Display Options
-
+    DisplayOptions displayOptions;
     //File Browser
-
+    FileBrowser fileBrowser;
+    
     //play a video
-
+    void playVideo(VideoControls videoControls, AudioControls audioControls, PlaybackControls playbackControls, DisplayOptions displayOptions, FileBrowser fileBrowser);
     //play music
-
+    void playAudio(AudioControls audioControls, PlaybackControls playbackControls, DisplayOptions displayOptions, FileBrowser fileBrowser);
     //create a media playlist
+    void mediaPlaylist(FileBrowser fileBrowser, std::string playListName = "Playlist 1"); 
 };
 
 
